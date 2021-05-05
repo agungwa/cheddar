@@ -56,7 +56,8 @@ let runJob = async () => { new CronJob('10/10 9-23 * * 1-5', async function() {
                 await handleUpsertData( elasticClient, dataIngest );
             }
             let dateNow = momentZone().tz("America/New_York").format("YYYY-MM-DD HH:mm ZZ");
-            console.log(`DATE: ${dateNow}`);
+            console.log( gte,' - ',lte, ' now: ',dateNow);
+            console.log( endpoint );
         } else {
             console.log(`time < 09.50`, ' now: ',momentZone().tz("America/New_York").format('HH:mm'))
         }
