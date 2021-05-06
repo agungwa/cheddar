@@ -16,6 +16,7 @@
     "elasticsearch": "^16.7.2",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "moment-timezone": "^0.5.33"
+    "moment-timezone": "^0.5.33",
+    "request": "^2.88.2"
   }
 }
