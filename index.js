@@ -52,7 +52,7 @@ let lte_ny = ny.subtract(10,'minutes');
 let lte = lte_ny.format('HH:mm');
 let gte_ny = ny.subtract(10,'minutes');
 let gte = gte_ny.format('HH:mm');
-let runJob = async () => { new CronJob('02 12 * * 1-5', async function() {
+let runJob = async () => { new CronJob('10/10 9-23 * * 1-5', async function() {
         if (momentZone().tz("America/New_York").format('HH:mm') > '09:49'){
             let endpoint = `http://13.250.47.31:3000/fetch?cmd=TOP&symbol=@top100&limit=500&time_gte=${gte}&time_lte=${lte}`
             let dateNow = momentZone().tz("America/New_York").format("YYYY-MM-DD HH:mm ZZ");
