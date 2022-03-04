@@ -31,7 +31,7 @@ const {
 //     };
 //     // Add Your Key Here!!!
 //     // axios.defaults.headers.common = {
-//     //     "x-api-key": "dPnKIbgQLJaezOPWvOTQkaBPBjMiCyRy7Dnw3zDL",
+//     //     "x-api-key": "",
 //     // };
 //     const data = await axios({
 //         method: "get",
